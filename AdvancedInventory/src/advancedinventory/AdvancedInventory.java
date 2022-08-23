@@ -5,6 +5,8 @@
  */
 package advancedinventory;
 
+import Views.FrmLogin;
+
 /**
  *
  * @author Christian Sacancela
@@ -15,7 +17,9 @@ public class AdvancedInventory {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        FrmLogin frm = new FrmLogin();
+        frm.setVisible(true);
     }
     
 }
