@@ -27,28 +27,238 @@ public class AdminPanel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        JPanelNS = new javax.swing.JPanel();
+        JLabelNS = new javax.swing.JLabel();
+        JPanelNP = new javax.swing.JPanel();
+        JLabelNP = new javax.swing.JLabel();
+        JPanelP = new javax.swing.JPanel();
+        JLabelP = new javax.swing.JLabel();
+        JPanelC = new javax.swing.JPanel();
+        JLabelC = new javax.swing.JLabel();
+        JPanelPr = new javax.swing.JPanel();
+        JLabelPr = new javax.swing.JLabel();
+        JPanelM = new javax.swing.JPanel();
+        JLabelM = new javax.swing.JLabel();
+        JPanelCat = new javax.swing.JPanel();
+        JLabelCat = new javax.swing.JLabel();
+        JPanelConf = new javax.swing.JPanel();
+        JLabelConf = new javax.swing.JLabel();
+        JPanelU = new javax.swing.JPanel();
+        JLabelU = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        txtSP = new javax.swing.JTextField();
+        btnU = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Bienvenido");
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(166, 166, 166)
-                .addComponent(jLabel1)
-                .addContainerGap(173, Short.MAX_VALUE))
+        JLabelNS.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelNS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelNS.setText("Nueva Venta");
+
+        javax.swing.GroupLayout JPanelNSLayout = new javax.swing.GroupLayout(JPanelNS);
+        JPanelNS.setLayout(JPanelNSLayout);
+        JPanelNSLayout.setHorizontalGroup(
+            JPanelNSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelNS, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel1)
-                .addContainerGap(253, Short.MAX_VALUE))
+        JPanelNSLayout.setVerticalGroup(
+            JPanelNSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelNSLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JLabelNS)
+                .addContainerGap())
         );
+
+        jPanel1.add(JPanelNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 40));
+
+        JLabelNP.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelNP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelNP.setText("Nueva Compra");
+
+        javax.swing.GroupLayout JPanelNPLayout = new javax.swing.GroupLayout(JPanelNP);
+        JPanelNP.setLayout(JPanelNPLayout);
+        JPanelNPLayout.setHorizontalGroup(
+            JPanelNPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelNP, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelNPLayout.setVerticalGroup(
+            JPanelNPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JPanelNPLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(JLabelNP)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(JPanelNP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 40));
+
+        JLabelP.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelP.setText("Productos");
+
+        javax.swing.GroupLayout JPanelPLayout = new javax.swing.GroupLayout(JPanelP);
+        JPanelP.setLayout(JPanelPLayout);
+        JPanelPLayout.setHorizontalGroup(
+            JPanelPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelP, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelPLayout.setVerticalGroup(
+            JPanelPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JPanelPLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(JLabelP)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(JPanelP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 40));
+
+        JLabelC.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelC.setText("Clientes");
+
+        javax.swing.GroupLayout JPanelCLayout = new javax.swing.GroupLayout(JPanelC);
+        JPanelC.setLayout(JPanelCLayout);
+        JPanelCLayout.setHorizontalGroup(
+            JPanelCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelC, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelCLayout.setVerticalGroup(
+            JPanelCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JPanelCLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(JLabelC)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(JPanelC, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 200, 40));
+
+        JLabelPr.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelPr.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelPr.setText("Proveedores");
+
+        javax.swing.GroupLayout JPanelPrLayout = new javax.swing.GroupLayout(JPanelPr);
+        JPanelPr.setLayout(JPanelPrLayout);
+        JPanelPrLayout.setHorizontalGroup(
+            JPanelPrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelPr, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelPrLayout.setVerticalGroup(
+            JPanelPrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JPanelPrLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(JLabelPr)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(JPanelPr, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 40));
+
+        JLabelM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelM.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelM.setText("Medidas");
+
+        javax.swing.GroupLayout JPanelMLayout = new javax.swing.GroupLayout(JPanelM);
+        JPanelM.setLayout(JPanelMLayout);
+        JPanelMLayout.setHorizontalGroup(
+            JPanelMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelM, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelMLayout.setVerticalGroup(
+            JPanelMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JPanelMLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(JLabelM)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(JPanelM, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 200, 40));
+
+        JLabelCat.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelCat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelCat.setText("Categorías");
+
+        javax.swing.GroupLayout JPanelCatLayout = new javax.swing.GroupLayout(JPanelCat);
+        JPanelCat.setLayout(JPanelCatLayout);
+        JPanelCatLayout.setHorizontalGroup(
+            JPanelCatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelCat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelCatLayout.setVerticalGroup(
+            JPanelCatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelCatLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JLabelCat)
+                .addContainerGap())
+        );
+
+        jPanel1.add(JPanelCat, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 200, 40));
+
+        JLabelConf.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelConf.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelConf.setText("Configuración");
+
+        javax.swing.GroupLayout JPanelConfLayout = new javax.swing.GroupLayout(JPanelConf);
+        JPanelConf.setLayout(JPanelConfLayout);
+        JPanelConfLayout.setHorizontalGroup(
+            JPanelConfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelConf, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelConfLayout.setVerticalGroup(
+            JPanelConfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelConfLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JLabelConf)
+                .addContainerGap())
+        );
+
+        jPanel1.add(JPanelConf, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 200, 40));
+
+        JLabelU.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        JLabelU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelU.setText("Usuarios");
+
+        javax.swing.GroupLayout JPanelULayout = new javax.swing.GroupLayout(JPanelU);
+        JPanelU.setLayout(JPanelULayout);
+        JPanelULayout.setHorizontalGroup(
+            JPanelULayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(JLabelU, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+        );
+        JPanelULayout.setVerticalGroup(
+            JPanelULayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JPanelULayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(JLabelU)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(JPanelU, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 200, 40));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 620));
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 22)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Sistema de Ventas");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 45, -1, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 130));
+
+        jPanel3.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel3.add(txtSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, 170, 30));
+
+        btnU.setText("Usuarios");
+        jPanel3.add(btnU, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 50, -1, 30));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1050, 130));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -89,6 +299,29 @@ public class AdminPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JLabelC;
+    private javax.swing.JLabel JLabelCat;
+    private javax.swing.JLabel JLabelConf;
+    private javax.swing.JLabel JLabelM;
+    private javax.swing.JLabel JLabelNP;
+    private javax.swing.JLabel JLabelNS;
+    private javax.swing.JLabel JLabelP;
+    private javax.swing.JLabel JLabelPr;
+    private javax.swing.JLabel JLabelU;
+    private javax.swing.JPanel JPanelC;
+    private javax.swing.JPanel JPanelCat;
+    private javax.swing.JPanel JPanelConf;
+    private javax.swing.JPanel JPanelM;
+    private javax.swing.JPanel JPanelNP;
+    private javax.swing.JPanel JPanelNS;
+    private javax.swing.JPanel JPanelP;
+    private javax.swing.JPanel JPanelPr;
+    private javax.swing.JPanel JPanelU;
+    private javax.swing.JButton btnU;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JTextField txtSP;
     // End of variables declaration//GEN-END:variables
 }
