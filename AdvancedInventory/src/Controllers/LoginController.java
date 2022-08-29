@@ -45,8 +45,15 @@ public class LoginController implements ActionListener{
                 AdminPanel admin = new AdminPanel();
                 admin.setVisible(true);
                 this.view.dispose();
+            }else{
+                JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrecta");
             }
         }
+        }else{
+            int question = JOptionPane.showConfirmDialog(null, "¿Está seguro que desea salir?", "Pregunta", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+            if (question == 0) {
+                System.exit(0);
+            }
         }
     }
     
