@@ -125,10 +125,97 @@ public class AdminPanel extends javax.swing.JFrame {
         TableU = new javax.swing.JTable();
         PagerU = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
+        jPanel18 = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        txtNameCat = new javax.swing.JTextField();
+        btnNewCat = new javax.swing.JButton();
+        btnRegisterCat = new javax.swing.JButton();
+        btnModifyCat = new javax.swing.JButton();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        TableCat = new javax.swing.JTable();
+        PagerCat = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
+        jPanel19 = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        txtNameM = new javax.swing.JTextField();
+        btnNewM = new javax.swing.JButton();
+        btnRegisterM = new javax.swing.JButton();
+        btnModifyM = new javax.swing.JButton();
+        txtAbbM = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        TableM = new javax.swing.JTable();
+        PagerM = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        TableNS = new javax.swing.JTable();
+        jLabel23 = new javax.swing.JLabel();
+        txtCodeNS = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        txtProductNS = new javax.swing.JTextField();
+        txtAmountNS = new javax.swing.JTextField();
+        txtPriceNS = new javax.swing.JTextField();
+        txtTotalNS = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        txtStockNS = new javax.swing.JTextField();
+        btnGenerateNS = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        JLabelTotalPay = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        TableS = new javax.swing.JTable();
+        PagerS = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        TablePurchase = new javax.swing.JTable();
+        PagerPurchase = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
+        jPanel22 = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        txtRUCCompany = new javax.swing.JTextField();
+        txtPhoneCompany = new javax.swing.JTextField();
+        btnModifyCompany = new javax.swing.JButton();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        txtAddressCompany = new javax.swing.JTextPane();
+        txtNameCompany = new javax.swing.JTextField();
+        jLabel46 = new javax.swing.JLabel();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        txtMessage = new javax.swing.JTextPane();
+        jLabel47 = new javax.swing.JLabel();
+        jPanel20 = new javax.swing.JPanel();
+        jPanel21 = new javax.swing.JPanel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        TableNP = new javax.swing.JTable();
+        jLabel34 = new javax.swing.JLabel();
+        txtCodeNP = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        txtProductNP = new javax.swing.JTextField();
+        txtAmountNP = new javax.swing.JTextField();
+        txtPriceNP = new javax.swing.JTextField();
+        txtTotalNP = new javax.swing.JTextField();
+        btnGenerateNP = new javax.swing.JButton();
+        jLabel40 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        JLabelTotalPay1 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -816,6 +903,11 @@ public class AdminPanel extends javax.swing.JFrame {
             }
         ));
         jScrollPane8.setViewportView(TableU);
+        if (TableU.getColumnModel().getColumnCount() > 0) {
+            TableU.getColumnModel().getColumn(1).setHeaderValue("Usuario");
+            TableU.getColumnModel().getColumn(3).setHeaderValue("Rol");
+            TableU.getColumnModel().getColumn(4).setHeaderValue("Caja");
+        }
 
         jPanel7.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 670, -1));
 
@@ -834,70 +926,485 @@ public class AdminPanel extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("tab4", jPanel7);
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1045, Short.MAX_VALUE)
+        jPanel8.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel18.setBorder(javax.swing.BorderFactory.createTitledBorder("Nueva Categoría"));
+
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel21.setText("Nombre");
+
+        btnNewCat.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnNewCat.setText("Nueva");
+
+        btnRegisterCat.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnRegisterCat.setText("Registrar");
+
+        btnModifyCat.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnModifyCat.setText("Modificar");
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addComponent(btnNewCat)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnRegisterCat)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnModifyCat))
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addGap(80, 80, 80)
+                        .addComponent(txtNameCat, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtNameCat, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21))
+                .addGap(56, 56, 56)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnNewCat, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRegisterCat, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModifyCat, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
+
+        jPanel8.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 340, 240));
+
+        TableCat.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Nombre", "Estado"
+            }
+        ));
+        jScrollPane9.setViewportView(TableCat);
+
+        jPanel8.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 670, -1));
+
+        javax.swing.GroupLayout PagerCatLayout = new javax.swing.GroupLayout(PagerCat);
+        PagerCat.setLayout(PagerCatLayout);
+        PagerCatLayout.setHorizontalGroup(
+            PagerCatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 670, Short.MAX_VALUE)
+        );
+        PagerCatLayout.setVerticalGroup(
+            PagerCatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jPanel8.add(PagerCat, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 470, 670, -1));
 
         jTabbedPane1.addTab("tab5", jPanel8);
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1045, Short.MAX_VALUE)
+        jPanel9.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel19.setBorder(javax.swing.BorderFactory.createTitledBorder("Nueva Medida"));
+
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel22.setText("Nombre");
+
+        btnNewM.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnNewM.setText("Nueva");
+
+        btnRegisterM.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnRegisterM.setText("Registrar");
+
+        btnModifyM.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnModifyM.setText("Modificar");
+
+        jLabel24.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel24.setText("Abreviatura");
+        jLabel24.setToolTipText("");
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addComponent(btnNewM)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnRegisterM)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnModifyM))
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel19Layout.createSequentialGroup()
+                                .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(53, 53, 53))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                                .addComponent(jLabel22)
+                                .addGap(91, 91, 91)))
+                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNameM, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtAbbM, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(txtNameM, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtAbbM, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnNewM, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRegisterM, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModifyM, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25))
         );
+
+        jPanel9.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 340, 290));
+
+        TableM.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Nombre", "Abreviatura", "Estado"
+            }
+        ));
+        jScrollPane10.setViewportView(TableM);
+
+        jPanel9.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 670, -1));
+
+        javax.swing.GroupLayout PagerMLayout = new javax.swing.GroupLayout(PagerM);
+        PagerM.setLayout(PagerMLayout);
+        PagerMLayout.setHorizontalGroup(
+            PagerMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 670, Short.MAX_VALUE)
+        );
+        PagerMLayout.setVerticalGroup(
+            PagerMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jPanel9.add(PagerM, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 470, 670, -1));
 
         jTabbedPane1.addTab("tab6", jPanel9);
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1045, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
-        );
+        jPanel10.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        TableNS.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Descripción", "Cantidad", "Precio", "Total"
+            }
+        ));
+        jScrollPane3.setViewportView(TableNS);
+
+        jPanel10.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 1030, 410));
+
+        jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel23.setText("Código");
+        jPanel10.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        jPanel10.add(txtCodeNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 100, 26));
+
+        jLabel25.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel25.setText("Producto");
+        jPanel10.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel26.setText("Cantidad");
+        jPanel10.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel27.setText("Precio");
+        jPanel10.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel28.setText("Total");
+        jPanel10.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 20, -1, -1));
+        jPanel10.add(txtProductNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 160, 26));
+        jPanel10.add(txtAmountNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 60, 26));
+        jPanel10.add(txtPriceNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, 70, 26));
+        jPanel10.add(txtTotalNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, 70, 26));
+
+        jLabel29.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel29.setText("Stock");
+        jPanel10.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        jPanel10.add(txtStockNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 60, 26));
+
+        btnGenerateNS.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnGenerateNS.setText("Generar");
+        jPanel10.add(btnGenerateNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel30.setText("Cliente");
+        jPanel10.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
+
+        jPanel10.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 150, 26));
+        jPanel10.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 550, 110, 26));
+        jPanel10.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 550, 140, 26));
+
+        jLabel31.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel31.setText("Total a pagar");
+        jPanel10.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 550, -1, -1));
+
+        JLabelTotalPay.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        JLabelTotalPay.setText("...");
+        jPanel10.add(JLabelTotalPay, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 550, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel32.setText("Paga con");
+        jPanel10.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 550, -1, -1));
+
+        jLabel33.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel33.setText("Vuelto");
+        jPanel10.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 550, -1, -1));
 
         jTabbedPane1.addTab("tab7", jPanel10);
 
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1045, Short.MAX_VALUE)
+        jPanel11.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        TableS.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Cliente", "Total", "Fecha"
+            }
+        ));
+        jScrollPane11.setViewportView(TableS);
+
+        jPanel11.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 1030, 410));
+
+        javax.swing.GroupLayout PagerSLayout = new javax.swing.GroupLayout(PagerS);
+        PagerS.setLayout(PagerSLayout);
+        PagerSLayout.setHorizontalGroup(
+            PagerSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1030, Short.MAX_VALUE)
         );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
+        PagerSLayout.setVerticalGroup(
+            PagerSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 70, Short.MAX_VALUE)
         );
+
+        jPanel11.add(PagerS, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 1030, 70));
 
         jTabbedPane1.addTab("tab8", jPanel11);
 
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel12.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        TablePurchase.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Proveedor", "Total", "Fecha"
+            }
+        ));
+        jScrollPane12.setViewportView(TablePurchase);
+
+        jPanel12.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 1030, 410));
+
+        javax.swing.GroupLayout PagerPurchaseLayout = new javax.swing.GroupLayout(PagerPurchase);
+        PagerPurchase.setLayout(PagerPurchaseLayout);
+        PagerPurchaseLayout.setHorizontalGroup(
+            PagerPurchaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1030, Short.MAX_VALUE)
+        );
+        PagerPurchaseLayout.setVerticalGroup(
+            PagerPurchaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 70, Short.MAX_VALUE)
+        );
+
+        jPanel12.add(PagerPurchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 1030, 70));
+
+        jTabbedPane1.addTab("tab9", jPanel12);
+
+        jPanel14.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel22.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos de la Empresa"));
+
+        jLabel39.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel39.setText("Nombre");
+
+        jLabel44.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel44.setText("Teléfono");
+
+        jLabel45.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel45.setText("Dirección");
+
+        btnModifyCompany.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnModifyCompany.setText("Modificar");
+
+        jScrollPane13.setViewportView(txtAddressCompany);
+
+        jLabel46.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel46.setText("RUC");
+
+        jScrollPane14.setViewportView(txtMessage);
+
+        jLabel47.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel47.setText("Mensaje");
+
+        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
+        jPanel22.setLayout(jPanel22Layout);
+        jPanel22Layout.setHorizontalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel39)
+                            .addComponent(jLabel44)
+                            .addComponent(jLabel45)
+                            .addComponent(jLabel46))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPhoneCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtRUCCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNameCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
+                        .addComponent(jLabel47)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnModifyCompany)
+                            .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(46, 46, 46))
+        );
+        jPanel22Layout.setVerticalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtRUCCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel46))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(txtNameCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel44)
+                    .addComponent(txtPhoneCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel45)
+                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel47)
+                    .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addComponent(btnModifyCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+        );
+
+        jPanel14.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 340, 470));
+
+        jTabbedPane1.addTab("tab10", jPanel14);
+
+        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
+        jPanel20.setLayout(jPanel20Layout);
+        jPanel20Layout.setHorizontalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1045, Short.MAX_VALUE)
         );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel20Layout.setVerticalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 590, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("tab9", jPanel12);
+        jTabbedPane1.addTab("tab11", jPanel20);
+
+        jPanel21.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        TableNP.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Descripción", "Cantidad", "Precio", "Total"
+            }
+        ));
+        jScrollPane7.setViewportView(TableNP);
+
+        jPanel21.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 1030, 410));
+
+        jLabel34.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel34.setText("Código");
+        jPanel21.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        jPanel21.add(txtCodeNP, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 100, 26));
+
+        jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel35.setText("Producto");
+        jPanel21.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel36.setText("Cantidad");
+        jPanel21.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
+
+        jLabel37.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel37.setText("Precio");
+        jPanel21.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, -1, -1));
+
+        jLabel38.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel38.setText("Total");
+        jPanel21.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 20, -1, -1));
+        jPanel21.add(txtProductNP, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 160, 26));
+        jPanel21.add(txtAmountNP, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 60, 26));
+        jPanel21.add(txtPriceNP, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, 70, 26));
+        jPanel21.add(txtTotalNP, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, 70, 26));
+
+        btnGenerateNP.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnGenerateNP.setText("Generar");
+        jPanel21.add(btnGenerateNP, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, -1, -1));
+
+        jLabel40.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel40.setText("Proveedor");
+        jPanel21.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
+
+        jPanel21.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 550, 150, 26));
+        jPanel21.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 550, 110, 26));
+        jPanel21.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 550, 140, 26));
+
+        jLabel41.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel41.setText("Total a pagar");
+        jPanel21.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 550, -1, -1));
+
+        JLabelTotalPay1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        JLabelTotalPay1.setText("...");
+        jPanel21.add(JLabelTotalPay1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 550, -1, -1));
+
+        jLabel42.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel42.setText("Paga con");
+        jPanel21.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 550, -1, -1));
+
+        jLabel43.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel43.setText("Vuelto");
+        jPanel21.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 550, -1, -1));
+
+        jTabbedPane1.addTab("Nueva Compra", jPanel21);
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 1050, 620));
 
@@ -948,6 +1455,8 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JLabel JLabelNS;
     private javax.swing.JLabel JLabelP;
     private javax.swing.JLabel JLabelPr;
+    private javax.swing.JLabel JLabelTotalPay;
+    private javax.swing.JLabel JLabelTotalPay1;
     private javax.swing.JLabel JLabelU;
     private javax.swing.JPanel JPanelC;
     private javax.swing.JPanel JPanelCat;
@@ -959,22 +1468,41 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JPanel JPanelPr;
     private javax.swing.JPanel JPanelU;
     private javax.swing.JPanel PagerC;
+    private javax.swing.JPanel PagerCat;
+    private javax.swing.JPanel PagerM;
     private javax.swing.JPanel PagerP;
     private javax.swing.JPanel PagerPr;
+    private javax.swing.JPanel PagerPurchase;
+    private javax.swing.JPanel PagerS;
     private javax.swing.JPanel PagerU;
     private javax.swing.JTable TableC;
+    private javax.swing.JTable TableCat;
+    private javax.swing.JTable TableM;
+    private javax.swing.JTable TableNP;
+    private javax.swing.JTable TableNS;
     private javax.swing.JTable TableP;
     private javax.swing.JTable TablePr;
+    private javax.swing.JTable TablePurchase;
+    private javax.swing.JTable TableS;
     private javax.swing.JTable TableU;
+    private javax.swing.JButton btnGenerateNP;
+    private javax.swing.JButton btnGenerateNS;
     private javax.swing.JButton btnModifyC;
+    private javax.swing.JButton btnModifyCat;
+    private javax.swing.JButton btnModifyCompany;
+    private javax.swing.JButton btnModifyM;
     private javax.swing.JButton btnModifyP;
     private javax.swing.JButton btnModifyPr;
     private javax.swing.JButton btnModifyU;
     private javax.swing.JButton btnNewC;
+    private javax.swing.JButton btnNewCat;
+    private javax.swing.JButton btnNewM;
     private javax.swing.JButton btnNewP;
     private javax.swing.JButton btnNewPr;
     private javax.swing.JButton btnNewU;
     private javax.swing.JButton btnRegisterC;
+    private javax.swing.JButton btnRegisterCat;
+    private javax.swing.JButton btnRegisterM;
     private javax.swing.JButton btnRegisterP;
     private javax.swing.JButton btnRegisterPr;
     private javax.swing.JButton btnRegisterU;
@@ -984,6 +1512,8 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbxMeasureP;
     private javax.swing.JComboBox<String> cbxProviderP;
     private javax.swing.JComboBox<String> cbxRoleU;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -997,8 +1527,35 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1009,10 +1566,16 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -1021,26 +1584,57 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField txtAbbM;
     private javax.swing.JTextPane txtAddressC;
+    private javax.swing.JTextPane txtAddressCompany;
     private javax.swing.JTextPane txtAddressPr;
+    private javax.swing.JTextField txtAmountNP;
+    private javax.swing.JTextField txtAmountNS;
+    private javax.swing.JTextField txtCodeNP;
+    private javax.swing.JTextField txtCodeNS;
     private javax.swing.JTextField txtCodeP;
     private javax.swing.JTextField txtDesP;
+    private javax.swing.JTextPane txtMessage;
     private javax.swing.JTextField txtNameC;
+    private javax.swing.JTextField txtNameCat;
+    private javax.swing.JTextField txtNameCompany;
+    private javax.swing.JTextField txtNameM;
     private javax.swing.JTextField txtNamePr;
     private javax.swing.JTextField txtNameU;
     private javax.swing.JPasswordField txtPassU;
     private javax.swing.JTextField txtPhoneC;
+    private javax.swing.JTextField txtPhoneCompany;
     private javax.swing.JTextField txtPhonePr;
+    private javax.swing.JTextField txtPriceNP;
+    private javax.swing.JTextField txtPriceNS;
     private javax.swing.JTextField txtPricePP;
     private javax.swing.JTextField txtPriceSP;
+    private javax.swing.JTextField txtProductNP;
+    private javax.swing.JTextField txtProductNS;
+    private javax.swing.JTextField txtRUCCompany;
     private javax.swing.JTextField txtRucPr;
     private javax.swing.JTextField txtSP;
+    private javax.swing.JTextField txtStockNS;
+    private javax.swing.JTextField txtTotalNP;
+    private javax.swing.JTextField txtTotalNS;
     private javax.swing.JTextField txtUserU;
     // End of variables declaration//GEN-END:variables
 }
