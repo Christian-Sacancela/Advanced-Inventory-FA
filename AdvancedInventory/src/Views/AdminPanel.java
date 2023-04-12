@@ -1447,26 +1447,26 @@ public class AdminPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel JLabelC;
-    private javax.swing.JLabel JLabelCat;
-    private javax.swing.JLabel JLabelConf;
-    private javax.swing.JLabel JLabelM;
-    private javax.swing.JLabel JLabelNP;
-    private javax.swing.JLabel JLabelNS;
-    private javax.swing.JLabel JLabelP;
-    private javax.swing.JLabel JLabelPr;
+    public javax.swing.JLabel JLabelC;
+    public javax.swing.JLabel JLabelCat;
+    public javax.swing.JLabel JLabelConf;
+    public javax.swing.JLabel JLabelM;
+    public javax.swing.JLabel JLabelNP;
+    public javax.swing.JLabel JLabelNS;
+    public javax.swing.JLabel JLabelP;
+    public javax.swing.JLabel JLabelPr;
     private javax.swing.JLabel JLabelTotalPay;
     private javax.swing.JLabel JLabelTotalPay1;
-    private javax.swing.JLabel JLabelU;
-    private javax.swing.JPanel JPanelC;
-    private javax.swing.JPanel JPanelCat;
-    private javax.swing.JPanel JPanelConf;
-    private javax.swing.JPanel JPanelM;
-    private javax.swing.JPanel JPanelNP;
-    private javax.swing.JPanel JPanelNS;
-    private javax.swing.JPanel JPanelP;
-    private javax.swing.JPanel JPanelPr;
-    private javax.swing.JPanel JPanelU;
+    public javax.swing.JLabel JLabelU;
+    public javax.swing.JPanel JPanelC;
+    public javax.swing.JPanel JPanelCat;
+    public javax.swing.JPanel JPanelConf;
+    public javax.swing.JPanel JPanelM;
+    public javax.swing.JPanel JPanelNP;
+    public javax.swing.JPanel JPanelNS;
+    public javax.swing.JPanel JPanelP;
+    public javax.swing.JPanel JPanelPr;
+    public javax.swing.JPanel JPanelU;
     private javax.swing.JPanel PagerC;
     private javax.swing.JPanel PagerCat;
     private javax.swing.JPanel PagerM;
