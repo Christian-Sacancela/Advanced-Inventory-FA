@@ -5,6 +5,8 @@
  */
 package Views;
 
+import Controllers.ConfigController;
+
 /**
  *
  * @author Christian Sacancela
@@ -16,6 +18,7 @@ public class AdminPanel extends javax.swing.JFrame {
      */
     public AdminPanel() {
         initComponents();
+        ConfigController config = new ConfigController(this);
     }
 
     /**
@@ -226,6 +229,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelNS.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelNS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelNS.setText("Nueva Venta");
+        JLabelNS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelNSLayout = new javax.swing.GroupLayout(JPanelNS);
         JPanelNS.setLayout(JPanelNSLayout);
@@ -246,6 +250,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelNP.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelNP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelNP.setText("Nueva Compra");
+        JLabelNP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelNPLayout = new javax.swing.GroupLayout(JPanelNP);
         JPanelNP.setLayout(JPanelNPLayout);
@@ -266,6 +271,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelP.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelP.setText("Productos");
+        JLabelP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelPLayout = new javax.swing.GroupLayout(JPanelP);
         JPanelP.setLayout(JPanelPLayout);
@@ -286,6 +292,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelC.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelC.setText("Clientes");
+        JLabelC.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelCLayout = new javax.swing.GroupLayout(JPanelC);
         JPanelC.setLayout(JPanelCLayout);
@@ -306,6 +313,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelPr.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelPr.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelPr.setText("Proveedores");
+        JLabelPr.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelPrLayout = new javax.swing.GroupLayout(JPanelPr);
         JPanelPr.setLayout(JPanelPrLayout);
@@ -326,6 +334,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelM.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelM.setText("Medidas");
+        JLabelM.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelMLayout = new javax.swing.GroupLayout(JPanelM);
         JPanelM.setLayout(JPanelMLayout);
@@ -346,6 +355,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelCat.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelCat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelCat.setText("Categorías");
+        JLabelCat.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelCatLayout = new javax.swing.GroupLayout(JPanelCat);
         JPanelCat.setLayout(JPanelCatLayout);
@@ -366,6 +376,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelConf.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelConf.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelConf.setText("Configuración");
+        JLabelConf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelConfLayout = new javax.swing.GroupLayout(JPanelConf);
         JPanelConf.setLayout(JPanelConfLayout);
@@ -386,6 +397,7 @@ public class AdminPanel extends javax.swing.JFrame {
         JLabelU.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabelU.setText("Usuarios");
+        JLabelU.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout JPanelULayout = new javax.swing.GroupLayout(JPanelU);
         JPanelU.setLayout(JPanelULayout);
