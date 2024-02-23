@@ -54,6 +54,8 @@ public class AdminPanel extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         txtSP = new javax.swing.JTextField();
         btnU = new javax.swing.JButton();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
@@ -228,6 +230,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelNS.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelNS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelNS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/newsale.png"))); // NOI18N
         JLabelNS.setText("Nueva Venta");
         JLabelNS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -239,16 +242,16 @@ public class AdminPanel extends javax.swing.JFrame {
         );
         JPanelNSLayout.setVerticalGroup(
             JPanelNSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelNSLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(JPanelNSLayout.createSequentialGroup()
                 .addComponent(JLabelNS)
-                .addContainerGap())
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel1.add(JPanelNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 200, 40));
 
         JLabelNP.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelNP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelNP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/purchase.png"))); // NOI18N
         JLabelNP.setText("Nueva Compra");
         JLabelNP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -270,6 +273,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelP.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/product.png"))); // NOI18N
         JLabelP.setText("Productos");
         JLabelP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -291,6 +295,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelC.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/clients.png"))); // NOI18N
         JLabelC.setText("Clientes");
         JLabelC.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -312,6 +317,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelPr.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelPr.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/provider.png"))); // NOI18N
         JLabelPr.setText("Proveedores");
         JLabelPr.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -333,6 +339,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelM.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/detailer.png"))); // NOI18N
         JLabelM.setText("Medidas");
         JLabelM.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -354,6 +361,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelCat.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelCat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelCat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/box.png"))); // NOI18N
         JLabelCat.setText("Categorías");
         JLabelCat.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -375,6 +383,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelConf.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelConf.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelConf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/conf.png"))); // NOI18N
         JLabelConf.setText("Configuración");
         JLabelConf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -396,6 +405,7 @@ public class AdminPanel extends javax.swing.JFrame {
 
         JLabelU.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         JLabelU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLabelU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/users.png"))); // NOI18N
         JLabelU.setText("Usuarios");
         JLabelU.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -434,6 +444,13 @@ public class AdminPanel extends javax.swing.JFrame {
 
         btnU.setText("Usuarios");
         jPanel3.add(btnU, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 50, -1, 30));
+
+        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/check.png"))); // NOI18N
+        jPanel3.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, -1, -1));
+
+        jLabel49.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel49.setText("Foam Art");
+        jPanel3.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1050, 130));
 
@@ -1568,6 +1585,8 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
